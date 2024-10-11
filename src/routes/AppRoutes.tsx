@@ -9,6 +9,7 @@ const AppRoutes = () => {
             {
             routeMap?.map((route, index)=>(
                 <Route key = {index} path={route.URL} element={<route.element />} />
+                // <Route path='*' element={<HomePage />} />
             ))
             }
         </Routes>

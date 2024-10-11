@@ -2,9 +2,6 @@ import React from 'react';
 import { Layout, Menu } from 'antd';  
 import { LinkedinOutlined, FacebookOutlined, InstagramOutlined } from '@ant-design/icons'; 
 import { Link } from 'react-router-dom';  
-import HomePage from '../../page/home/HomePage';
-import AboutPage from '../../page/abouts/AboutPage';
-
 
 const { Header } = Layout;  
 
