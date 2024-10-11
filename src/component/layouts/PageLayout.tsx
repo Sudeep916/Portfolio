@@ -21,11 +21,13 @@ const PageLayout:FC<PageLayoutProps>= ({children}) => {
         </Breadcrumb>
         <div
           style={{
-            minHeight: 380,
+            background: '#001529',
+            minHeight: 480,
             padding: 24,
+            color:'#fff'
           }}
         >
-          This is  my Content
+          This is my Content
         </div>
       </Content>
         <div className="children">
