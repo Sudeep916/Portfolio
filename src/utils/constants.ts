@@ -1,46 +1,63 @@
-import HomePage from "../page/home/HomePage"
-import ContactPage from "../page/contacts/ContactPage"
-import AboutPage from "../page/abouts/AboutPage"
-import ProjectPage from "../page/projects/ProjectPage"
+import { ReactNode } from "react";
+import HomePage from "../page/home/HomePage";
+import ContactPage from "../page/contacts/ContactPage";
+import AboutPage from "../page/abouts/AboutPage";
+import ProjectPage from "../page/projects/ProjectPage";
+import LoginPage from "../page/login/loginPage";
+import DetailBoard from "../page/detailBoard/DetailBoard";
 import TechnologiesPage from "../page/technologies/TechnologiesPage"
 
-interface IAppRoutes{
-    
-    name:string,
-    URL:string,
-    _id:number,
-    element:()=>JSX.Element
+export interface IRouteMaps {
+    __id: string;
+    name: string;
+    URL: string;
+    element:() => JSX.Element;
+    isProtected?: boolean;
 }
 
-export const routeMap:IAppRoutes[] =[
+
+export const routeMap:IRouteMaps[] = [
     {
-        name:'Home',
-        URL:'/',
-        _id:1,
-        element:HomePage
+        __id: '1',
+        name: 'Home',
+        URL: '/',
+        element: HomePage
     },
     {
-        name:'Contact',
-        URL:'/ContactPage',
-        _id:2,
-        element:ContactPage
+        __id: '2',
+        name: 'Contact',
+        URL: '/contactPage',
+        element: ContactPage
     },
     {
-        name:'About',
-        URL:'/AboutPage',
-        _id:3,
-        element:AboutPage
+        __id: '3',
+        name: 'About',
+        URL: '/aboutPage',
+        element: AboutPage
     },
     {
-        name:'Project',
-        URL:'/ProjectPAge',
-        _id:4,
-        element:ProjectPage
+        __id: '4',
+        name: 'Projects',
+        URL: '/projectPage',
+        element: ProjectPage
+    },
+    {
+        __id: '5',
+        name: 'Login',
+        URL: '/loginPage',
+        element: LoginPage
+    },
+    {
+        __id: '6',
+    name: 'Detailboard',
+    URL: '/detailboard',
+    element: DetailBoard,
+    isProtected: true,
     },
     {
         name:'Technologies',
         URL:'/TechnologiesPage',
-        _id:4,
+        __id:'6',
         element:TechnologiesPage
     }
 ]

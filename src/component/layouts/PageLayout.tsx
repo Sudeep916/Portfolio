@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Layout } from 'antd';
 const { Content } = Layout
 interface PageLayoutProps {
     children: React.ReactNode
@@ -13,12 +13,12 @@ const PageLayout:FC<PageLayoutProps>= ({children}) => {
         <div>
             <Header />
         </div>
-        <Content style={{ padding: '0 48px' }}>
-        <Breadcrumb style={{ margin: '16px 0' }}>
+        <Content style={{ padding: '0 0' }}>
+        {/* <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
+        </Breadcrumb> */}
         <div
           style={{
             background: '#001529',
@@ -28,8 +28,10 @@ const PageLayout:FC<PageLayoutProps>= ({children}) => {
           }}
         >
           This is my Content
+          
         </div>
       </Content>
+      
         <div className="children">
             {children}
         </div>

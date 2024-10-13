@@ -1,14 +1,14 @@
 import React from 'react'
 import PageLayout from '../../component/layouts/PageLayout'
+import ProjectsContainer from '../../container/projects/ProjectContainer'
 
 const ProjectPage = () => {
   return (
-    <div>
-        <PageLayout  >
-            <div>This is my Project page</div> 
-        </PageLayout>
-      
-    </div>
+    <>
+    <PageLayout>
+        <ProjectsContainer />
+    </PageLayout>
+    </>
   )
 }
 

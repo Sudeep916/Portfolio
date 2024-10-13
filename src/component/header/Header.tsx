@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const { Header } = Layout;  
 
-const PortfolioHeader = () => {  
+const PortfolioHeader = () => {
   return (  
     <Layout style={{ backgroundColor: '#001529' }}>  
       <Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>  
@@ -25,6 +25,9 @@ const PortfolioHeader = () => {
         </Menu.Item>  
         <Menu.Item key="5">  
           <Link to="/ContactPage">Contact</Link>  
+        </Menu.Item>
+        <Menu.Item key="6">  
+          <Link to="/loginPage">Login</Link>  
         </Menu.Item>
         </Menu>  
         
